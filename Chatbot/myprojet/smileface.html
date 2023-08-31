@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frown face</title>
+</head>
+<body>
+    <fieldset class="myfieldset">
+    <a href="./phaseone.html"><button>leave</button></a><br>
+    <img src="./smileface.png" 
+    alt="smileface" 
+    style="background: linear-gradient(skyblue,yellow,black); 
+    border-radius: 150px;
+    width: 200px;
+    height: 190px;
+    cursor: pointer;
+    padding: 5px;
+    padding: 5px;
+    margin-right: 10px">
+        <h1>what is your name(Required)</h1>
+        <input class="userInput">
+        <h1>write a feed back(Required)</h1>
+        <input class="userInput2"><br>
+        <button onclick="myFunction()">Send feed back</button>
+        <fieldset class="thefieldset"><h1 class="message"></h1></fieldset>
+        <div>
+        </fieldset>
+    
+            <h1></h1>
+    
+            <style>
+                button{
+                    background: linear-gradient(black,gold,white,red,grey);
+                }
+                button:hover {
+                    cursor: pointer;
+                }
+    
+                button:active {
+                    cursor: progress;
+                }
+    
+                body {
+                    background: linear-gradient(skyblue,yellow,black);
+                    text-align: center;
+                    color: lightslategray;
+                }
+                fieldset{
+                    border: none;
+                    
+                    margin-left: 300px;
+                    width: 600px;
+                    color: black;
+                    background: linear-gradient(skyblue,yellow,black);
+                }
+                .myfieldset{
+                    border-radius: 30pc;
+                    margin-left: 300px;
+                    width: 600px;
+                }
+                .thefieldset{
+                    width: 250px;
+                    margin-left: 150px;
+                    border-radius: 10px;
+                }
+                input{
+            border-radius: 50px;
+            border: none;
+            height: 20px;
+        }
+            </style>
+            <script>
+                function myFunction() {
+                    let userInput = document.querySelector(".userInput");
+                    let userInput2 = document.querySelector(".userInput2");
+                    let message = document.querySelector(".message");
+    
+                    message.innerHTML = "hi, " + userInput.value + " # " + userInput2.value + " thanks for the feed back";
+                    alert("!how can we inprove!")
+    
+                }
+            </script>
+    
+    
+    </html>
+    </body>
+    
+    </html>
+</body>
+</html>

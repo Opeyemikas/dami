@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frown face</title>
+</head>
+<body>
+    <fieldset class="fieldset1">
+    <a href="./phaseone.html"><img src="./frownface.png"
+    alt="frownface" 
+    style="background: linear-gradient(blue,yellow,black); 
+    border-radius: 150px;
+    width: 200px;
+    height: 190px;
+    cursor: pointer;
+    padding: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 19px;"></a>
+        <h1>what is your name(Required)</h1>
+        <input class="userInput">
+        <h1>write a feed back(Required)</h1>
+        <input class="userInput2"><br>
+        <button onclick="myFunction()">Send feed back</button>
+        <fieldset class="fieldset2"><h1 class="message"></h1></fieldset>
+        <div>
+        </fieldset>
+    
+            <h1></h1>
+    
+            <style>
+                button{
+                    background: linear-gradient(black,white,grey);
+                    border-radius: 20px;
+                    border-color: black;
+                }
+                button:hover {
+                    cursor: pointer;
+                }
+    
+                button:active {
+                    cursor: progress;
+                }
+    
+                body {
+                    background: linear-gradient(blue,yellow,black);
+                    text-align: center;
+                    color: lightslategray;
+                }
+                .fieldset1{
+                    background: linear-gradient(yellow,black,blue);
+                    margin-left: 450px;
+                    width: 320px;
+                    border-radius: 30px;
+                }
+                .fieldset2{
+                    background: linear-gradient(black,yellow,blue);
+                    border-radius: 30pc;
+                }
+                input{
+            border-radius: 50px;
+            border: none;
+            height: 20px;
+        }
+            </style>
+            <script>
+                function myFunction() {
+                    let userInput = document.querySelector(".userInput");
+                    let userInput2 = document.querySelector(".userInput2");
+                    let message = document.querySelector(".message");
+    
+                    message.innerHTML = "hi, " + userInput.value + " # " + userInput2.value + " thanks for the feed back";
+                    alert("!What did you not like about the website and how can we inprove!")
+    
+                }
+            </script>
+    
+    
+    </html>
+    </body>
+    
+    </html>
+</body>
+</html>

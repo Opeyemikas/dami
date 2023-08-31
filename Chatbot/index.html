@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <h1>Welcome to stage 1</h1>
+
+  <div class="chatbot1">
+    <ul class="chatbox">
+      <header>
+        <h2>Sign up</h2>
+      </header>
+  <form onsubmit="return validate()"
+  action="./message.html">
+    <input id="uname" placeholder="Username"
+    type="text"><br><br>
+
+    <input type="text" id="lname"
+    placeholder="Last name(Optional)">
+    <br><br>
+
+    <input type="email" placeholder="Email"
+     id="email">
+     <br><br>
+    
+    <input type="password" placeholder="Your Password" id="myPassword"><br><br>
+    <input type="checkbox" id="togglePassword">
+    <label for="">Show Password</label><br><br>
+    
+
+    <button onclick="validate()"
+    type="submit">Submit</button><br>
+
+    already have <br> account? <a href="./message.html">login</a>
+  </form>
+    </ul>
+  </div>
+</body>
+</html>

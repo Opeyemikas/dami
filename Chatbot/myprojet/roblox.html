@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox.CodingKing</title>
+
+    <style>
+        *{
+
+            background: linear-gradient(white,yellow,pink,black,red);
+            text-align: center;
+        }
+        fieldset{
+            border-radius: 50px;
+            height: 500px;
+            width: 200px;
+            margin-left: 420px;
+        }
+        button{
+            cursor: pointer;
+            border-radius: 50px;
+            border-color: blueviolet;
+        }
+        input{
+            border-radius: 150px;
+        }
+        .myfieldset{
+            margin-left: 5px;
+            height: 15px;
+            width: 300px;
+        }
+        .button1{
+            cursor: alias;
+        }
+        .button1:active{
+            cursor: progress;
+        }
+
+    </style>
+</head>
+<body>
+    <fieldset>
+`       <a href="./phaseone.html"><button><-=-=-==</button></a><br>
+<h1>what is your name?(Optional)</h1>
+<input class="userInput"><br>
+<button onclick="myFunction()" class="button1">Danload</button>
+<fieldset class="myfieldset">
+<h1 class="message"></h1>
+</fieldset>
+<div>
+
+    </fieldset>
+
+            <script>
+                function myFunction() {
+                    let userInput = document.querySelector(".userInput");
+                    let message = document.querySelector(".message");
+    
+                    message.innerHTML = "Hey, " + userInput.value + "#5586" + "you just danloaded roblox or did you?";
+                    alert("!Danloading..!")
+    
+                }
+            </script>
+</body>
+</html>

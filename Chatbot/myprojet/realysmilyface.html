@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frown face</title>
+</head>
+<body>
+    <fieldset class="myfieldset">
+    <a href="./phaseone.html"><button>leave</button></a><br>
+    <img src="./realysmilyface.png" 
+    alt="realy smily face" 
+    style="background: linear-gradient(white,yellow,pink,black,red); 
+    border-radius: 150px;
+    width: 200px;
+    height: 190px;
+    cursor: pointer;
+    padding: 5px;">
+
+
+
+        <h1>what is your name(Required)</h1>
+        <input class="userInput">
+        <h1>write a feed back(Required)</h1>
+        <input class="userInput2"><br>
+        <button onclick="myFunction()">Send feedback</button>
+        <fieldset class="fieldset2"><h1 class="message"></h1></fieldset><br>
+        <div>
+            <fieldset class="fieldset1">Vip card</fieldset>
+            <fieldset class="fieldset1">
+                <h4>name: <input placeholder="write your name here" type="text" class="userInput3"></h4>
+                <h4>vip no:15368277</h4>
+                <h4><del>date issued:unknown</del></h4>
+                <button onclick="myFunction2()"><del>Send feedback</del> </button>
+            </fieldset>
+        </fieldset>
+            <h1></h1>
+    
+            <style>
+                button{
+                    background: linear-gradient(goldenrod,gold);
+                    border-radius: 50pc;
+                    border: none;
+                }
+                button:hover {
+                    cursor: pointer;
+                }
+    
+                button:active {
+                    cursor: progress;
+                }
+    
+                body {
+                    background: linear-gradient(aquamarine,skyblue,goldenrod,gold);
+                    text-align: center;
+                    color: goldenrod;
+                }
+                .fieldset1{
+                    margin-left: 160px;
+                    width: 300px;
+                    color: black;
+                    background: linear-gradient(aquamarine,skyblue,goldenrod,gold);
+                }
+                fieldset{
+                    border-color: goldenrod;
+                    margin-left: 300px;
+                    width: 600px;
+                    color: white yellow pink black red;
+                    background-color: rgb(205, 205, 23);
+                }
+                .message{
+                    color: goldenrod,gold;
+                }
+                .myfieldset{
+                    margin-left: 270px;
+                    width: 600px;
+                    border-radius: 30px;
+                    background: linear-gradient(goldenrod,gold,yellow,goldenrod);
+                }
+                .fieldset2{
+                    margin-left: 10px;
+                    border-radius: 30px;
+                }
+                input{
+            border-radius: 50px;
+            border: none;
+            height: 20px;
+        }
+                .fieldset3{
+                    width: 100px;
+                }
+            </style>
+            <script>
+                function myFunction() {
+                    let userInput = document.querySelector(".userInput");
+                    let userInput2 = document.querySelector(".userInput2");
+                    let message = document.querySelector(".message");
+    
+                    message.innerHTML = "hi, " + userInput.value + " # " + userInput2.value + ".You have been rewarded a vip pass" +" thanks for the feed back";
+                    alert("!what do you like about this website?!")
+                    alert("to get moe vip pases rate this websit nicely")
+    
+                }
+            </script>
+    
+    
+    </html>
+    </body>
+    
+    </html>
+</body>
+</html>

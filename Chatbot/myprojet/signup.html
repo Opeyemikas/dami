@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        input{
+            border-radius: 50px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body
+    style="text-align: center;background: linear-gradient(grey,green,white,skyblue,blue,white,blue,grey,white,grey,blue,red)">
+    <fieldset
+        style="width: 700px;text-align: center;margin-left: 280px;background: linear-gradient(red,blue,grey,blue,white,blue,skyblue,white,green,grey);">
+        <a href="./phaseone.html" style="background: linear-gradient(black,white,grey,red);border-radius: 10px;"><-==</a>
+                
+                <form action="form">
+                    <h2 style="background: white;width: 400px;margin-left: 150px;">Fill out the following information
+                        needed</h2>
+                    <h4 style="background: white;width: 200px;margin-left: 255px">Put down your name</h4>
+                    <input class="userInput">
+                    <h4 style="background: white;width: 200px;margin-left: 255px;">Put down your Last Name</h4>
+                    <input class="userInput2">
+                    <h4 style="background: white;width: 200px;margin-left: 255px;">Write your Email(Optional)</h4>
+                    <input type="email">
+                    <h4 style="background: white;width: 200px;margin-left: 255px;">Click your age</h4>
+                    <input type="number">
+                    <h4 style="background: white;width: 200px;margin-left: 255px;">Write down a secure password</h4>
+                    <input type="password">
+                    <h4 style="background: white;width: 200px;margin-left: 255px">Re-do your password </h4>
+                    <input type="password">
+                </form>
+                </div>
+                <button onclick="myFunction()" style="cursor: pointer; background: linear-gradient(black,red,grey,green,blue,white);">enter</button>
+                <a href="./myfol/phase2.html"><button>continue...</button></a>
+                <h1 class="message"></h1>
+                <div>
+    </fieldset>
+    <script>
+            function myFunction() {
+                let userInput = document.querySelector(".userInput");
+                let userInput2 = document.querySelector(".userInput2");
+                let message = document.querySelector(".message");
+
+                message.innerHTML = "Hi, " + userInput.value + "@" + userInput2.value + ",you have been signed up";
+                alert("!Coding KING UK Ltd!")
+
+            }
+    </script>
+</body>
+
+</html>
